@@ -6,7 +6,7 @@ import './style.scss'
 
 const Main = () => (
   <main className="main">
-      <Routes>
+   <Routes>
         <Route path="/" element={<Home />} />
         <Route path="search" element={(<div>search page</div>)} />
         <Route path="details" element={(<div>users page</div>)}>

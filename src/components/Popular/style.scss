@@ -1,0 +1,78 @@
+.popular {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+
+  .movie {
+    width: calc(25% - 15px);
+    margin: 0 7.5px 7.5px 7.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    position: relative;
+    min-height: 350px;
+
+    a {
+
+      img {
+        border-radius: 10px;
+        width: 100%;
+        transition: all .2s ease-in-out;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    .movie_content {
+      margin-top: 20px;
+      position: relative;
+
+      .date {
+        color: green;
+        font-size: 12px;
+      }
+
+      .raiting {
+        background-color: darkblue;
+        color: blue;
+        position: absolute;
+        top: -40px;
+        left: 5%;
+        border: 1px solid black;
+        border-radius: 50%;
+        padding: 5px;
+      }
+
+      .raiting:after {
+        content: "\0025";
+        font-size: 5px;
+        position: absolute;
+        top: 30%;
+      }
+
+      .green{
+        color: darkgreen;
+      }
+      .orange{
+        color: orange;
+      }
+      .red{
+        color: red;
+      }
+    }
+ }
+}
+
+.green{
+  color: green;
+}
+.orange{
+  color: orange;
+}
+.red{
+  color: red;
+}

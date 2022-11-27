@@ -18,6 +18,7 @@ const Home = () => {
   return (
     <>
       <div className="search_movies">
+      <div className="container">
       <div className="content_wrapp">
         <div className="content_title">
           <h2>Welcome</h2>
@@ -31,6 +32,7 @@ const Home = () => {
             <input className="btn" type="submit" value="Search"/>
           </form>
         </div>
+      </div>
       </div>
     </div>
 
@@ -52,7 +54,9 @@ const Home = () => {
     }
 
     {data.length !== 0
-     ? (data.results.map(({ id, poster_path, original_title, release_date, vote_average }) => {
+     ? (
+      <div className='popular'>
+        {data.results.map(({ id, poster_path, original_title, release_date, vote_average }) => {
         return (
           <Popular 
             key={id}
@@ -63,7 +67,9 @@ const Home = () => {
             vote_average={vote_average}
          />
         )
-       })) 
+       })}
+      </div>
+      ) 
        : ''
     }
     </>

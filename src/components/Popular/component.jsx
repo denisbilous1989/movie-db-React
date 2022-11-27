@@ -1,5 +1,7 @@
 import { generateImgUrl, generateDate, getColor, generatePopularity  } from '../helpers/helpers'
 
+import './style.scss'
+
 const Popular = ({ id, original_title, poster_path, release_date, vote_average }) => {
   return (
     <div className='movie'>
